@@ -1,1 +1,33 @@
-p {color: red;}
+html {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+}
+
+p {
+    color: red;
+    text-align: center;
+}
+
+#info {
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+#footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+}
+
+.mark {
+    background-color: blue;
+    color: yellow;
+    font-weight: bold;
+}
