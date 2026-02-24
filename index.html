@@ -1,20 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="">
     <head>
+        <meta charset="utf-8">
         <title>Welcome to My Website</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="js/text.js"></script>
     </head>
     <body>
-        <h1>Hola a todos!</h1>
-        <p>Esta es mi primera pagina web.</p>
+        <h1>Mi primera pagina web</h1>
+        <p>Hola a todos!</p>
         <div id="info">
             Cosas necesarias para hacer una pagina web:
-                * HTML para establecer estructura.
-                * CSS para estilizar la pagina.
-                * JavaScript para interactividad.
-            <img src="images/sample.jpg" alt="Sample Image">
+                <ul>
+                    <li>HTML para establecer estructura.</li>
+                    <li>CSS para estilizar la pagina.</li>
+                    <li>JavaScript para interactividad.</li>
+                </ul>
+            <img id="button" src="images/Sample.png" alt="Sample Image" onmousedown="ChangeMouse()" onclick="myFunction()">
         </div>
-        <div>
-            creditos para Talento Tech
+        <div id="footer">
+            creditos para <font class="mark">Talento Tech</font>
         </div>
+    
     </body>
 </html>
