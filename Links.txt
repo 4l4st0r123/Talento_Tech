@@ -1,0 +1,8 @@
+Docs:
+ - https://drive.google.com/file/d/19S_xaRVIgLq_NsGzXwaCI0CZ_UfjhYNs/view?pli=1
+ - https://drive.google.com/file/d/1isGNwgGvrmOZoYpvDClxEacqRtjQkpYS/view
+
+Gamma:
+* https://gamma.app/docs/Desafio-practico-1-Git-y-Github-12-r2bh80qxn2wlsbv?mode=doc
+* https://gamma.app/docs/Desafio-practico-2-Git-y-Github-22-ir52igg1o1uk6zy?mode=doc
+* https://gamma.app/docs/Material-complementario-Git-y-Github-xeyf69lhuyegd3q?mode=doc
