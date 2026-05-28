@@ -1,58 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-main: 'Roboto Mono', monospace;
+    /*
+    --color-primary: #3498db;
+    --color-secondary: #2ecc71;
+    --color-light: #ecf0f1;
+    --color-background: #f5f5f5;
+    --color-text: #333;
+    --color-border: #ddd;
+
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    --radius-md: 8px;
+    --radius-lg: 16px;
+
+    --transition: all 0.3s ease;
+
+    --font-main: 'Roboto Mono', monospace;
+    */
+}
+
 html {
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-}
-
-p {
-    color: red;
-    text-align: center;
-}
-
-#info {
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    margin: auto;
-}
-
-#footer {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #333;
-    position: absolute;
-    bottom: 0;
-    width: 50%;
-}
-
-.mark {
-    background-color: blue;
-    color: yellow;
-    font-weight: bold;
+    font-size: 15px;
+    scroll-behavior: smooth;
 }
 
 /*
-etiquetas:
- - header
- - nav
- - footer
- - GoogleFonts
- - background (color, imagen, degradado, etc.)
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    min-height: 100vh;
 
-Formulario de contacto (Formspree)
- - Nombre
- - correoElectronico
- - mensaje
+    display: grid;
+    grid-template-areas: "header header"
+                         "navigation main"
+                         "main"
+                         "footer footer";
+    grid-template-columns: 1fr;
 
-CSS y CSS3
- (Clase4, Clase5)
+}
 
-Flexbox (Productos/Cards)
-(Clase6)
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-primary);
+    box-shadow: var(--shadow);
 
-Grid (Reseñas) y Media Queries (Contacto)
-(Clase7)
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
 
+        .logo {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+
+        img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+
+    color: white;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
 
 */
