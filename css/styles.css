@@ -68,16 +68,52 @@ body {
             width: 40px;
             height: 40px;
             object-fit: cover;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
         }
-
-        img {
-            width: 40px;
-            margin-right: 10px;
-        }
-
-        h1 {
+        
+        .site-title {
             font-size: 1.5rem;
             color: white;
+            margin-left: 10px;
+        }
+    }
+    
+    .top-nav-list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+
+        .top-nav-item {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--color-secondary);
+            }
+        }
+
+        &:last-child {
+            color: white;
+            font-weight: 500;
+        }
+
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--color-secondary);
+            }
         }
     }
 
