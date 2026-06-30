@@ -7,3 +7,7 @@ function ChangeMouse() {
 function myFunction() {
     alert("¡Haz hecho clic en la imagen!");
 }
+
+/*
+
+*/
