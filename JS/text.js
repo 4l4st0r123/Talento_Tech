@@ -4,10 +4,10 @@ function ChangeMouse() {
 }
 
 
-function myFunction() {
-    alert("¡Haz hecho clic en la imagen!");
+function myFunction(valName) {
+    alert("¡Haz hecho clic en la imagen de " + valName + "!");
 }
 
 /*
-
+None
 */
