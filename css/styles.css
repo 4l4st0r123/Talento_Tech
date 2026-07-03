@@ -8,8 +8,12 @@
 
 :root {
     --primary-color: #3498db;
-    --secondary-color: #2ecc71;
+    --secondary-color: #f49f0a;
+    --light-color: #efca08;
+    --background-color: #2ecc71;
+    --text-color: #061826;
     --font-main: 'Roboto Mono', monospace;
+
     /*
     --color-primary: #3498db;
     --color-secondary: #2ecc71;
@@ -39,7 +43,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
-    color:#000000;
+    color:val(--text-color);
     margin: 0;
   }
 
@@ -58,7 +62,7 @@ body::before {
 
 h1, p {
     font-family:Arial, Helvetica, sans-serif;
-    color: #f5fffa;
+    color: var(--secondary-color);
     margin-top: 0;
     margin-bottom: 0.5rem;
     text-align: center;
