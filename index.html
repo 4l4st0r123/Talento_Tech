@@ -3,110 +3,213 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to My Website</title>
+        <title>Talento Tech | Tienda de Impresiones 3D</title>
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <script src="js/text.js"></script>
+        <script src="https://kit.fontawesome.com/01a7edaade.js" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
         
         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+        <link rel="icon" type="image/x-icon" href="images/logo.ico">
     </head>
     <body>
-        <header class="header">
+        <header id="header" class="header">
             <div class="logo-container">
-                <a href="#" class="logo-link">
-                    <img src="images/logo.png" alt="Logo" class="logo">
+                <a href="./index.html" class="logo-link">
+                    <img src="images/Icon.png" alt="Logo" class="logo">
                 </a>
-
-                <h1 class="site-title">
-                    Mi primera pagina web
-                </h1>
             </div>
 
-            <nav class="top-nav">
-                <ul class="top-nav-list">
-                    <li class="top-nav-item"><a href="#home" class="top-nav-link">Inicio</a></li>
-                    <li class="top-nav-item"><a href="#productos" class="top-nav-link">Productos</a></li>
-                    <li class="top-nav-item"><a href="#reviews" class="top-nav-link">Reseñas</a></li>
-                    <li class="top-nav-item"><a href="#about" class="top-nav-link">Informacion</a></li>
-                    <li class="top-nav-item">
-                        <a href="#contact" class="top-nav-link">
-                            Contacto
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 3H22V21H2V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M22 3L12 13L2 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-
+            <nav class="nav-container">
+                <a href="#">Login <i class="fas fa-id-card" aria-hidden="true"></i></a>
+                <a href="#registro">Registro <i class="fas fa-book" aria-hidden="true"></i></a>
+                <a href="./productos.html">Carrito <i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
             </nav>
         </header>
-
+        <nav class="top-nav">
+            <ul class="top-nav-list">
+                <li class="top-nav-item"><a href="#home" class="top-nav-link"><i class="fas fa-home" aria-hidden="true"></i> Inicio</a></li>
+                <li class="top-nav-item"><a href="#productos" class="top-nav-link"><i class="fas fa-store" aria-hidden="true"></i> Productos</a></li>
+                <li class="top-nav-item"><a href="#reviews" class="top-nav-link"><i class="fas fa-newspaper" aria-hidden="true"></i> Reseñas</a></li>
+                <li class="top-nav-item"><a href="#about" class="top-nav-link"><i class="fas fa-info-circle" aria-hidden="true"></i> Informacion</a></li>
+                <li class="top-nav-item"><a href="#contact" class="top-nav-link"><i class="fas fa-envelope" aria-hidden="true"></i> Contacto</a></li>
+            </ul>
+        </nav>
         <main>
-            <section id="home" class="hero-section">
-                <h1>Mi primera pagina web</h1>
-                <p>Hola a todos!</p>
+            <section id="home" class="main-section">
+                <h1>Ideas impresas en 3D</h1>
+                <h2>Objetos únicos para tu hogar, <br>escritorio y proyectos personalizados.</h2>
                 <div id="info">
-                    Cosas necesarias para hacer una pagina web:
-                        <ul>
-                            <li>HTML para establecer estructura.</li>
-                            <li>CSS para estilizar la pagina.</li>
-                            <li>JavaScript para interactividad.</li>
-                        </ul>
-                </div>
-                <img id="button" src="images/Sample.png" alt="Sample Image" onmousedown="ChangeMouse()" onclick="myFunction('Home')" >
-            </section>
-
-            <section id="productos" class="products-section">
-                <h1>Nuestros productos</h1>
-                <p>Descubre nuestra amplia gama de productos de calidad:</p>
-                <img id="button" src="images/Sample.png" alt="Sample Image" onmousedown="ChangeMouse()" onclick="myFunction('Productos')" >
-            </section>
-
-            <section id="reviews" class="reviews-section">
-                <h1>Reseñas de clientes</h1>
-                <p>Lo que nuestros clientes dicen sobre nosotros:</p>
-                <img id="button" src="images/Sample.png" alt="Sample Image" onmousedown="ChangeMouse()" onclick="myFunction('Reviews')" >
-            </section>
-
-            <section id="about" class="hero-section">
-                <h1>Acerca de nosotros</h1>
-                <p>Somos una empresa dedicada a proporcionar soluciones innovadoras.</p>
-                <img id="button" src="images/Sample.png" alt="Sample Image" onmousedown="ChangeMouse()" onclick="myFunction('About')" >
-            </section>
-            
-            <section id="contact" class="hero-section">
-                <div class="contactos">
-                    <h1>Datos de contacto</h1>
-                    <img id="button" src="images/Sample.png" alt="Sample Image" onmousedown="ChangeMouse()" onclick="myFunction('Contact')" >
-                    <div class="texto">
-                        <p>Visite nuestras redes sociales:</p>
-                        <ul>
-                            <li><span onclick="alert('redireccionando');"><i class="fa-brands fa-youtube"></i> Youtube</span></li>
-                            <li><span onclick="alert('redireccionando');"><i class="fa-brands fa-facebook-f"></i> Facebook</span></li>
-                            <li><span onclick="alert('redireccionando');"><i class="fa-brands fa-twitter"></i> Twitter</span></li>
-                            <li><span onclick="alert('redireccionando');"><i class="fa-brands fa-instagram"></i> Instagram</span></li>
-                        </ul>
-                    </div>
-                    <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.7343535501186!2d-58.40221189716862!3d-34.58765834405286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9c0321e593%3A0xc8e920e5bf30c9c1!2sJos%C3%A9%20Andr%C3%A9s%20Pacheco%20de%20Melo%202501%2C%20C1425AUC%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e1!3m2!1ses!2sar!4v1716490244667!5m2!1ses!2sar" 
-                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        <p>Visitenos en: <span>José Andrés Pacheco de Melo 2501</span></p>
-                    </div>
+                    <h3>¿Por qué elegirnos?</h3>
+                    <ul>
+                        <li>✔ Fabricación bajo pedido</li>
+                        <p>Cada pieza se fabrica bajo pedido, asegurando que recibas un producto único y personalizado.</p>
+                        <li>✔ Materiales de calidad</li>
+                        <p>Utilizamos filamentos de alta calidad para garantizar la durabilidad y el acabado de cada pieza.</p>
+                        <li>✔ Diseños personalizados</li>
+                        <p>Puedes diseñar tu propio producto o elegir entre nuestras opciones predefinidas.</p>
+                        <li>✔ Envíos a todo el país</li>
+                        <p>Realizamos envíos a todo el país, asegurando que tu pedido llegue de manera segura y rápida.</p>
+                    </ul>
                     <br>
-                    <input id="mostrar" type="button" value="mostrar mas" onclick="visible();">
+                    <h3>¿Cómo funciona?</h3>
+                    <ul>
+                        <li>1. Elegís un modelo</li>
+                        <p>Selecciona un modelo de nuestra colección o envíanos tu propio diseño para que lo fabriquemos.</p>
+                        <li>2. Lo imprimimos</li>
+                        <p>Utilizamos tecnología de impresión 3D de vanguardia para crear tus productos con precisión y calidad.</p>
+                        <li>3. Lo enviamos</li>
+                        <p>Te enviamos tu producto directamente al domicilio designado, asegurando que llegue en perfectas condiciones.</p>
+                    </ul>
                 </div>
             </section>
-
+            <section id="productos" class="products-section">
+                <h2>Nuestros productos</h2>
+                <h3>Descubre nuestra amplia gama de productos de calidad:</h3>
+                <ul>
+                    <li>Ver colección</li>
+                    <li>Pedir un diseño</li>
+                </ul>
+                <h2>Productos destacados</h2>                
+                <div id="productCard" class="products-grid">
+                    <article class="product-card">
+                        <img src="https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" alt="imagen de Essence Mascara Lash Princess" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-title">
+                                Essence Mascara Lash Princess
+                            </h3>
+                            <p class="product-description">
+                                The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.
+                            </p>
+                            <p class="product-price">
+                                <span>Precio:</span> 
+                                <span class="price">$9.99</span>
+                            </p>
+                            <button type="button" class="product-button">
+                                Añadir al Carrito
+                            </button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" alt="imagen de Essence Mascara Lash Princess" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-title">
+                                Essence Mascara Lash Princess
+                            </h3>
+                            <p class="product-description">
+                                The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.
+                            </p>
+                            <p class="product-price">
+                                <span>Precio:</span> 
+                                <span class="price">$9.99</span>
+                            </p>
+                            <button type="button" class="product-button">
+                                Añadir al Carrito
+                            </button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" alt="imagen de Essence Mascara Lash Princess" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-title">
+                                Essence Mascara Lash Princess
+                            </h3>
+                            <p class="product-description">
+                                The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.
+                            </p>
+                            <p class="product-price">
+                                <span>Precio:</span> 
+                                <span class="price">$9.99</span>
+                            </p>
+                            <button type="button" class="product-button">
+                                Añadir al Carrito
+                            </button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" alt="imagen de Essence Mascara Lash Princess" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-title">
+                                Essence Mascara Lash Princess
+                            </h3>
+                            <p class="product-description">
+                                The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.
+                            </p>
+                            <p class="product-price">
+                                <span>Precio:</span> 
+                                <span class="price">$9.99</span>
+                            </p>
+                            <button type="button" class="product-button">
+                                Añadir al Carrito
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="reviews" class="reviews-section">
+                <h2>Reseñas de clientes</h2>
+                <h3>Lo que nuestros clientes dicen sobre nosotros:</h3>
+                <br>
+                <div class="reviews-flex">
+                    <div class="review-card">
+                        <h3 class="review-title">"Buena mobilidad de productos."</h3>
+                        <p class="review-text">"El producto llegó rápido y en perfectas condiciones."</p>
+                        <p class="review-author">- Jenny Smith</p>
+                    </div>
+                    <div class="review-card">
+                        <h3 class="review-title">"Sobresaliente atencion."</h3>
+                        <p class="review-text">"Excelente calidad y servicio. ¡Recomiendo totalmente!"</p>
+                        <p class="review-author">- Greg Martins</p>
+                    </div>
+                    <div class="review-card">
+                        <h3 class="review-title">"Gran elaboracion del producto."</h3>
+                        <p class="review-text">"Diseños personalizados que superaron mis expectativas."</p>
+                        <p class="review-author">- Ferdinand S.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="info-section">
+                <h2>Acerca de nosotros</h2>
+                <h3>Somos una empresa dedicada a proporcionar soluciones innovadoras.</h3>
+                <p></p>
+                <p></p>
+            </section>
+            <section id="contact" class="contact-section">
+                <h2>Datos de contacto</h2>
+                <h3>Contactanos en caso de consulta</h3>
+                <form action="https://formspree.io/#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">
+                            Nombre
+                        </label>
+                        <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">
+                            Correo Electrónico
+                        </label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="tu.correo@ejemplo.com" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje" class="form-label">
+                            Mensaje
+                        </label>
+                        <textarea id="mensaje" name="mensaje" class="form-textarea" rows="6" placeholder="Cuéntanos cómo podemos ayudarte..." required=""></textarea>
+                    </div>
+                    <input type="submit" value="Enviar Mensaje" class="submit-button">
+                </form>
+                <br>
+                <h3>¿Deseas saber mas de nuestro local?</h3>
+                <p class="center">Ve nuestra ubicación en el mapa.<a href="./informacion.html">Entra aqui>></a></p>
+            </section>
         </main>
-        <br>
-        <footer>
-                            <img id="button" src="images/Sample.png" alt="Sample Image" onmousedown="ChangeMouse()" onclick="myFunction('Footer')" >
-            creditos para <font class="mark">Talento Tech</font>
+        <footer class="footer">
+            <p>© 2026 Tienda Online - Todos los derechos reservados</p>
+            <p>Creditos para <font class="mark">Talento Tech</font>  - Proyecto de Desarrollo Web para Talento Tech</p>
+            <div class="arrow">
+                <a href="#header"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
         </footer>
-
     </body>
 </html>

@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #FF4E00;
+    --secondary-color: #396FAA;
+    --light-color: #ffdf00;
+    --background-color: #ffa200;
+    --text-color: #ff0098;
+    --font-main: 'Roboto Mono', monospace;
+    --text-shadow: 2px 2px 2px rgba(0, 0, 0);
+    --shadow: 0px 2px 8px rgba(0, 0, 0, 15);
+    --transition: all 0.3s ease;
+}
+
+
+/*Header*/
+.logo-container {
+    background-color: white;
+    border-radius: 5px;
+    border: var(--light-color) 5px solid;
+}
+
+.nav-container {
+    background-color: var(--light-color);
+    padding: 5px;
+    border-radius: 8px;
+    position: relative;
+    right: 0px;
+    top: 15%;
+}
+
+/*Nav*/
+.top-nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    width: vmax;
+}
+
+.top-nav-item {
+    display: inline-block;
+    padding: 10px;
+    color: var(--secondary-color);
+    margin: 0px 10px;
+}
+
+.top-nav-item:hover {
+    border: var(--light-color) 2px solid;
+}
+
+.top-nav-item a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+/*contact Section*/
+.contact-section {
+    text-align: center;
+    padding: 5rem 8%;
+}
+
+span {
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.contactos > div {
+    position: relative;
+    display: inline-block;
+}
+
+.texto {
+    position: absolute;
+    width: 20vw;
+    height: 40vh;
+}
+
+.texto li {
+    list-style: none;
+    text-shadow: var(--text-shadow);
+}
+
+.mapa {
+    text-align: center;
+    width: 40vw;
+}
+
+/*footer*/
+.footer {
+    padding: 1rem 0;
+    background-color: var(--light-color);
+}
+
+.arrow i {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.footer p {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bold;
+}
